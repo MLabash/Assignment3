@@ -1,0 +1,257 @@
+*{
+  box-sizing:border-box;
+}
+body{
+  margin:0;
+  font-family:"RO Sans",Calibri,sans-serif;
+}
+main{
+  padding:1em;
+}
+img{
+  max-width:100%;
+  height:auto;
+}
+a{
+  text-decoration:none;
+  color:#01689b;
+}
+#logo{
+  max-width:100%;
+  height:auto;
+  display:block;
+  margin:auto;
+  padding-left:12.5%;
+  padding-bottom:0.5em;
+}
+#hero-section h1{
+  height:7em;
+}
+#hero-section{
+  width:100%;
+  height:auto;
+  background-image:url("src/schiphol.jpg");
+  background-size:100% 100%;
+  animation-name:hero-frame;
+  animation-duration:8s;
+  animation-iteration-count:infinite;
+}
+#most-visited-section, #news-section{
+  border-top:5px solid #01689b;
+  margin-bottom:1em;
+}
+#aside-section{
+  border-top:5px solid #01689b;
+  margin-bottom:1em;
+  padding:1em;
+}
+figure{
+  margin:0;
+}
+img{
+  max-width:100%;
+  height:auto;
+}
+.article-detail{
+  padding-left:1em;
+  max-width:50%;
+  float:left;
+}
+ #news-section img{
+  max-width:50%;
+  float:left}
+section{
+ margin-bottom:2em;
+}
+#hero-section,#most-visited-section,#news-section,#aside-section{
+  width:100%;
+}
+.article-with-pic,.article-without-pic{
+  width:100%;
+  overflow:auto;
+}
+.article-with-pic{
+  background-color:lightgray;
+  margin-bottom:0.5em;
+}
+.article-without-pic{
+  border-top:1px solid lightgray;
+  margin-top:0.5em;
+}
+#news-section p{
+  display:none;
+}
+#most-visited-list{
+  -webkit-column-count:1;
+  -moz-column-count:1;
+  column-count:1;
+}
+#most-visited-title{
+  -webkit-column-span:all;
+  -moz-column-span:all;
+  column-span:all;
+}
+.artticle-detail{
+  width:50%;
+}
+.section-title{
+  margin-top:0;
+}
+.article-title{
+  margin-top:0;
+  color:#01689b;
+}
+.container{
+  width:100%;
+  display:flex;
+  flex-wrap:wrap;
+  clear:both;
+}
+article p{
+  color:#767676;
+}
+time{
+  color:#767676;
+  text-decoration:none;
+  font-size:0.8125em;
+}
+footer{
+  width:100%;
+  clear:both;
+  background-color:#e6e6e6;
+  padding-bottom:1.5em;
+  border-top:3px solid #4e4e4e;
+  color:#535353;
+  overflow:auto;
+}
+.footer-section{
+  width:100%;
+  padding:1em;
+  -webkit-column-count:2;
+  -moz-column-count:2;
+  column-count:2;
+}
+ul{
+  list-style-type:none;
+  margin:0;
+}
+footer h2{
+  border-bottom:1px solid #b4b4b4;
+  font-size:1.25em;
+  font-weight:normal;
+  -webkit-column-span:all;
+  -moz-column-span:all;
+  column-span:all;
+}
+footer a{
+ color:#535353;
+}
+
+@keyframes hero-frame{
+  0% {background-image:url("src/schiphol.jpg");}
+  25% {background-image:url("src/skyline-amsterdam.jpg");}
+  50% {background-image:url("src/herfstbos.jpg");}
+  100% {background-image:url("src/bordesscene-hd.jpg");}
+}
+
+@media screen and (min-width:428px) and (max-width:768px){
+  #hero-section h1{
+    height:10em;
+  }
+  .colomn-style{
+    -webkit-column-count:2;
+    -moz-column-count:2;
+    column-count:2;
+  }
+  .article-without-pic{
+    width:50%;
+    border-top-width:0;
+    margin-left:auto;
+    margin-right:auto;
+    padding:1em;
+  }
+  #news-section p{
+    display:block;
+  }
+  .footer-section{
+    width:33.33%;
+    float:left;
+    -webkit-column-count:1;
+    -moz-column-count:1;
+    column-count:1;
+  }
+}
+
+@media screen and (min-width:769px)and (max-width:1024px){
+  #hero-section h1{
+    height:12em;
+  }
+  .colomn-style{
+  -webkit-column-count:2;
+  -moz-column-count:2;
+   column-count:2;
+  }
+  #articles{
+    width:60%;
+  }
+  #aside-section{
+    width:35%;
+    margin-left:auto;
+  }
+  .article-without-pic{
+    width:50%;
+    padding:1em;
+    border-top-width:0;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  #news-section p{
+    display:block;
+  }
+  .footer-section{
+    width:33.33%;
+    float:left;
+    -webkit-column-count:1;
+    -moz-column-count:1;
+    column-count:1;
+  }
+}
+
+@media screen and (min-width:1025px){
+  body{
+    max-width:1024px;
+    margin:auto;
+  }
+  #hero-section h1{
+    height:15em;
+  }
+  .colomn-style{
+    -webkit-column-count:2;
+    -moz-column-count:2;
+    column-count:2;
+  }
+  #articles{
+    width:60%;
+  }
+  #aside-section{
+    width:35%;
+    margin-left:auto;
+  }
+  .article-without-pic{
+    width:50%;
+    padding:1em;
+    border-top-width:0;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  #news-section p{
+    display:block;
+  }
+  .footer-section{
+     width:33.33%;
+     float:left;
+     -webkit-column-count:1;
+     -moz-column-count:1;
+     column-count:1;
+  }
+}
